@@ -16,3 +16,6 @@ Guttaspørsmål - nettside med 100 spørsmål lek
 	-Mulighet for å komme med tilbakemelding (Forslag til spørsmål og features)
 	-Valg før start av spill? (Hvor mange spørsmål, hvilke kategorier)
 	-Legge til flere spill å velge mellom
+
+# Nettside
+Kan bruke freenom.com for gratis å ha nettsiden online

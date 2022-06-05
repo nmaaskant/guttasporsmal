@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import PlayerForm from './PlayerForm';
-
+import Players from './Players'
 function PlayerList() {
-    const [player, setPlayers] = useState([])
+    const [players, setPlayers] = useState([])
 
     const addPlayer = player => {
         if (!player.text || /^\s*$/.test(player.text)) {
@@ -14,22 +14,16 @@ function PlayerList() {
     };
 
     const removePlayer = id => {
-        let updatePlayers = players.map(player => {
-            if (player.id === id) {
-                player.isComplete = !player.isComplete;
-            }
-            return player;
-        });
-        setPlayers(updatePlayers);
+        const removeArr = [...players].filter(player => player.id !==id)
+        setPlayers(removeArr)
     };
 
     return (
         <div>
             <h1>Registrer spiller</h1>
             <PlayerForm onSubmit={addPlayer} />
-            <Player 
+            <Players
             players={players}
-            completePlayer = {completePlayer}
             removePlayer = {removePlayer}
             />
         </div>

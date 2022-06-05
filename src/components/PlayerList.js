@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import PlayerForm from './PlayerForm';
 
 function PlayerList() {
     const [player, setPlayers] = useState([])
@@ -21,6 +22,18 @@ function PlayerList() {
         });
         setPlayers(updatePlayers);
     };
+
+    return (
+        <div>
+            <h1>Registrer spiller</h1>
+            <PlayerForm onSubmit={addPlayer} />
+            <Player 
+            players={players}
+            completePlayer = {completePlayer}
+            removePlayer = {removePlayer}
+            />
+        </div>
+    )
 }
 
 export default PlayerList;

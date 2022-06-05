@@ -1,4 +1,6 @@
 # guttasporsmal
+"kun for gutta!"
+
 Guttaspørsmål - nettside med 100 spørsmål lek
 
 # MVP

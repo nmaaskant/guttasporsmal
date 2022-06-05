@@ -19,3 +19,10 @@ Guttaspørsmål - nettside med 100 spørsmål lek
 
 # Nettside
 Kan bruke freenom.com for gratis å ha nettsiden online
+
+
+# React/koding
+
+	- I terminall, alltid kjør koden "npm install" før du begynner å kode. 
+	- husk å lage bransjes, og commit til de istedet for til main, da unngår vi konflikter!
+	- alltid git pull før du starter å kode.

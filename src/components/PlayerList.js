@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PlayerForm from './PlayerForm';
-import Players from './Players'
+import Players from './Player'
 function PlayerList() {
     const [players, setPlayers] = useState([])
 

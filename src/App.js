@@ -1,9 +1,10 @@
 import './App.css';
+import PlayerList from './components/PlayerList';
 
 function App() {
   return (
     <div>
-      <h3>Hello world!</h3>
+      <PlayerList />
     </div>
   );
 }

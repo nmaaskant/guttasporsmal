@@ -4,6 +4,7 @@ import { RiCloseCircleLine } from 'react-icons/ri'
 
 function Player ({players, removePlayer}) {
 
+
     return players.map((player) => (
         <div className="icons">
             <RiCloseCircleLine

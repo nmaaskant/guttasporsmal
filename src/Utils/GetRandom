@@ -1,0 +1,9 @@
+
+function getRandom() {
+    
+    const objectKeys = Object.keys(window.Questions);
+    const randomKey = objectKeys[Math.floor(Math.random() *objectKeys.length)];
+    window.selectedQuestion = window.Questions[randomKey];
+};
+
+export default getRandom;

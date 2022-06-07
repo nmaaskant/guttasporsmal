@@ -5,9 +5,12 @@ function Player ({players, removePlayer}) {
     
 
     return players.map((player) => (
-        <div className="icons">
+        <div className="">
+            <div>
+                {player.text};
+            </div>
             <RiCloseCircleLine
-           key={player.id} onClick={() => removePlayer(player.id)}
+           key={player.id}onClick={() => removePlayer(player.id)}
            className='delete-icon'/> 
         </div>
         

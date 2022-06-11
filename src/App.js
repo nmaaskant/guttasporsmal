@@ -1,12 +1,11 @@
 import './App.css';
-import PlayerList from './components/PlayerList';
 import Game from './components/Game';
+import './Styles/Game.css';
 
 function App() {
   return (
     <div>
-      <PlayerList />
-      <Game />
+      <Game/>
     </div>
   );
 }

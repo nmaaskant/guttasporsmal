@@ -31,8 +31,12 @@ let colors = [
     color:violet;
 ]
 */
-questions.sort(() => Math.random() - 0.5);
-challenges.sort(() => Math.random() - 0.5);
+
+function sortQuestions(){
+    questions.sort(() => Math.random() - 0.5);
+    challenges.sort(() => Math.random() - 0.5);
+}
+
 
 function random_bg_color() {
     var x = Math.floor(Math.random() * 256);
@@ -45,6 +49,7 @@ function random_bg_color() {
 
 
 function Snusboks(props){
+    sortQuestions();
     random_bg_color();
     const [count, setCount] = useState(0);
     const [isChallenge, setChallenge] = useState(false);
@@ -68,7 +73,6 @@ function Snusboks(props){
         random_bg_color();
         }
     }
-    challenges.sort(() => Math.random() - 0.5);
     return(
         <div>
             <button onClick={previous} className="prev">forrige spørsmål</button>

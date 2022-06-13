@@ -46,11 +46,10 @@ function random_bg_color() {
 
     document.body.style.background = bgColor;
 }
-
+sortQuestions();
+random_bg_color();
 
 function Snusboks(props){
-    sortQuestions();
-    random_bg_color();
     const [count, setCount] = useState(0);
     const [isChallenge, setChallenge] = useState(false);
     const [challengeCount, setChallengeCount] = useState(-1);

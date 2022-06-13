@@ -4,9 +4,8 @@ import Snusboks from './components/Snusboks';
 
 function App() {
   return (
-    <div>
-      <PlayerList />
-      {Snusboks(0)}
+    <div className="background">
+      <Snusboks round="0" />
     </div>
   );
 }

@@ -1,14 +1,15 @@
 import './App.css';
-import Game from './components/Game';
+
 import Header from './components/Header';
+import Snusboks from './components/Snusboks';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <Game />
+      <Snusboks round="0" />
     </div>
-  );
-}
+  )
+};
 
 export default App;

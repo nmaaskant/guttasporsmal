@@ -1,5 +1,4 @@
 import './App.css';
-
 import Header from './components/Header';
 import Snusboks from './components/Snusboks';
 
@@ -9,7 +8,8 @@ function App() {
       <Header />
       <Snusboks round="0" />
     </div>
-  )
-};
+ );
+}
+
 
 export default App;

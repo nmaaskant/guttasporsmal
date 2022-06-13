@@ -5,7 +5,7 @@ let questions = [
     "Hvem har mest milf mor?",
     "Hvem har den diggeste søsteren?",
     "Hvem av er mest skitten?",
-    "Hvem klarer ikke å chugge?",
+    "Hvem suger til å chugge?",
     "Hvem har mest draget?",
     "Hvem hadde du vært homo for?",
     "Hvem hadde sett best ut som motsatt kjønn?"
@@ -54,6 +54,7 @@ function Snusboks(props){
     const [isChallenge, setChallenge] = useState(false);
     const [challengeCount, setChallengeCount] = useState(-1);
 
+    //Når next knappen trykkes: Ny bakgrunnsfarge, 10% sjangs for utfordring, neste spørsmål ellers
     const next = () => {
         random_bg_color();
         let numb = Math.random();
@@ -67,11 +68,13 @@ function Snusboks(props){
         }
     }
 
+    //Når tilbake knappen trykkes: Ny bakgrunnsfarge, spørsmålscounter tilbake 1.
     const previous = () => {
         if(count>0) {setCount(count - 1);
         random_bg_color();
         }
     }
+
     return(
         <div>
             <button onClick={previous} className="prev">forrige spørsmål</button>

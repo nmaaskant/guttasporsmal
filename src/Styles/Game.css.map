@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,GAAG;EACnB,MAAM,EAAC,EAAE;EACT,OAAO,EAAE,EAAE;CAYd;;AAjBD,AAOI,KAPC,CAOD,WAAW,CAAC;EACR,KAAK,EAAE,GAAG;EACV,KAAK,ECTD,IAAI;CDUX;;AAVL,AAWI,KAXC,CAWD,YAAY,CAAC;EACT,KAAK,EAAE,GAAG;CACb;;AAbL,AAcI,KAdC,CAcD,WAAW,CAAC;EACR,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "Game.scss",
+        "Variables.scss"
+    ],
+    "names": [],
+    "file": "Game.css"
+}

@@ -1,0 +1,20 @@
+@import "./Variables.scss";
+
+.Game {
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    margin:0%;
+    padding: 0%;
+
+    .ButtonPrev {
+        width: 15%;
+        color: $BlueColor;
+    }
+    .GameDisplay {
+        width: 70%;
+    }
+    .ButtonNext {
+        width: 15%;
+    }
+};

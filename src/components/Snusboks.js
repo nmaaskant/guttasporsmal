@@ -70,9 +70,11 @@ function Snusboks(props){
 
     //Når tilbake knappen trykkes: Ny bakgrunnsfarge, spørsmålscounter tilbake 1.
     const previous = () => {
+        if (isChallenge) setChallenge(false);
+        else{
         if(count>0) {setCount(count - 1);
         random_bg_color();
-        }
+        }}
     }
 
     return(

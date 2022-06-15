@@ -5,7 +5,6 @@ import Snusboks from './components/Snusboks';
 function App() {
   return (
     <div className='App'>
-      <Header />
       <Snusboks round="0" />
     </div>
  );

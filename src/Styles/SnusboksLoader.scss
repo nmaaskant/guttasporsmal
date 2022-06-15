@@ -1,0 +1,37 @@
+@import './Variables.scss';
+
+.Container {
+    animation: FadeInnOut 4s ease-in-out ;
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 75px;
+        color: $WhiteColor;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $BlackColor;
+
+    }
+    
+    p {
+        font-size: 40px;
+        color: $WhiteColor;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $BlackColor;
+    }
+
+    @keyframes FadeInnOut {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

@@ -1,11 +1,7 @@
 @import "./Variables.scss";
 
 .Game {
-    display: flex; 
-    align-items: center;
-    flex-direction: row;
-    margin:0%;
-    padding: 0%;
+    @include FlexContainer();
 
     .ButtonPrev {
         width: 15%;

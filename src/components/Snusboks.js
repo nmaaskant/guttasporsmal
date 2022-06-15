@@ -1,9 +1,10 @@
 import '../Styles/Snusboks.css';
 import React, { useState } from "react";
+import Questions from './Questions';
 
 let questions = [
-    "Hvem har mest milf mor?",
-    "Hvem har den diggeste søsteren?",
+    "Hvem av gutta har mest milf mor?",
+    "Hvem av gutta har den diggeste søsteren?",
     "Hvem av er mest skitten?",
     "Hvem suger til å chugge?",
     "Hvem har mest draget?",
@@ -79,12 +80,15 @@ function Snusboks(props){
 
     return(
         <div className="Snusboks">
-            <button onClick={previous} className="PrevButton">forrige spørsmål</button>
-                <div className="quest">
-                    <p> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-                    <h3> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+            <div className="Text">
+                    <p className="spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                    <p> Hvem av gutta...</p>
+                    <h3 className> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
                 </div>
-            <button onClick={next} className="NextButton">Neste spørsmål</button>
+            <div className="Buttons">
+                <button onClick={previous} className="PrevButton">forrige spørsmål</button>
+                <button onClick={next} className="NextButton">Neste spørsmål</button>
+            </div>
         </div>
     )
 }

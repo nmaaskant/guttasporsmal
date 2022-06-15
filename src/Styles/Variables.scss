@@ -1,6 +1,31 @@
 // COLORS
 
 $BlueColor: blue;
+
 $PurpleColor: purple;
+$PurlerDarkColor: rgb(107, 1, 107);
+
+$WhiteColor: white;
+
+$BlackColor: black;
 
 // FONTS
+
+// STYLES
+@mixin ButtonStyle(){
+    width: 400px;
+    background-color: $PurpleColor;
+    border-color: transparent;
+
+    &:active {
+        background-color: $PurlerDarkColor;
+    }
+}
+
+@mixin FlexContainer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin:0%;
+    padding: 0%;
+}

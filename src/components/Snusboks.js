@@ -1,4 +1,4 @@
-import "../App.css";
+import '../Styles/Snusboks.css';
 import React, { useState } from "react";
 
 let questions = [
@@ -78,11 +78,13 @@ function Snusboks(props){
     }
 
     return(
-        <div>
-            <button onClick={previous} className="prev">forrige spørsmål</button>
-            <button onClick={next} className="next">Neste spørsmål</button>
-            <p className="quest">{isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-            <h3 className="quest">{isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+        <div className="Snusboks">
+            <button onClick={previous} className="PrevButton">forrige spørsmål</button>
+                <div className="quest">
+                    <p> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                    <h3> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                </div>
+            <button onClick={next} className="NextButton">Neste spørsmål</button>
         </div>
     )
 }

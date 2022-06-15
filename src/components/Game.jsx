@@ -1,6 +1,7 @@
 import '../Styles/Game.css';
 
 function Game() {
+
     return (
         <div className="Game">
             <button className="ButtonPrev"> Forrige spørsmål</button>

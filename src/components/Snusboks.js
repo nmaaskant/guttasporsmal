@@ -77,17 +77,33 @@ function Snusboks(props){
         }}
     }
 
+    for (let i = 10; i < Snusboks.count; i += 10) {
+
+        if(i === 10) {
     return(
         <div className="Snusboks">
             <button onClick={previous} className="PrevButton">forrige spørsmål</button>
                 <div className="quest">
-                    <p> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-                    <h3> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                    <h3> Chugg!</h3>
                 </div>
             <button onClick={next} className="NextButton">Neste spørsmål</button>
         </div>
     )
-}
+        }
+    else {
+        return(
+            <div className="Snusboks">
+                <button onClick={previous} className="PrevButton">forrige spørsmål</button>
+                    <div className="quest">
+                        <p> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                        <h3> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                    </div>
+                <button onClick={next} className="NextButton">Neste spørsmål</button>
+            </div>
+        )
+    }
+    }
+    }
 
 
 export default Snusboks;

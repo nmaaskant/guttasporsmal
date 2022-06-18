@@ -8,7 +8,7 @@ function App() {
 
   const [loading, setLoading] = useState(false);
 
-  const tekst = <h3>Snusboksleken går ut på snusboks
+  const tekst = <h3 className="infoTekst">Snusboksleken går ut på at en snusboks
   blir kastet til den personen som påstanden passer best til. 
   Personen som mottar snusboksen drikker 3 slurker og kaster videre. 
   Kan også inkludere splash, hvor personene som sitter ved siden av
@@ -17,9 +17,12 @@ function App() {
   const snus = () => {
     setMode( loading ? <SnusboksLoader /> : <Snusboks round="0" />)
   }
+  const startScreen = () => {
+    setMode(start);
+  }
 
   const info = () => {
-    setMode(tekst)
+    setMode(<button onClick={startScreen} className="back">{tekst}</button>)
   }
 
     
@@ -34,7 +37,6 @@ const start =
 
   const [mode, setMode] = useState(start);
 
-  const backButton = <button onClick={setMode(start)}>Tilbake</button>;
 
 
 useEffect(() => {

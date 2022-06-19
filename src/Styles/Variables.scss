@@ -13,7 +13,6 @@ $BlackColor: black;
 
 // STYLES
 @mixin ButtonStyle(){
-    width:50%;
     background-color: $PurpleColor;
     border-color: transparent;
     &:active {

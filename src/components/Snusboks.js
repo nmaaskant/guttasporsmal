@@ -81,9 +81,9 @@ function Snusboks(props){
     return(
         <div className="Snusboks">
             <div className="Text">
-                    <p className="spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-                    <p> Hvem av gutta...</p>
-                    <h3 className> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                    <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                    <p className="HvemAvGutta"> Hvem av gutta...</p>
+                    <h3 className="Challenge"> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
                 </div>
             <div className="Buttons">
                 <button onClick={previous} className="PrevButton">forrige spørsmål</button>

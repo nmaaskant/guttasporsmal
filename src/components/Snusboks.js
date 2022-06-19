@@ -77,14 +77,14 @@ function Snusboks(props){
         }}
     }
 
-    for (let i = 10; i < Snusboks.count; i += 10) {
+    for (let count = 0; count < 100; count++) {
 
-        if(i === 10) {
+        if(count === 10) {
     return(
         <div className="Snusboks">
             <button onClick={previous} className="PrevButton">forrige spørsmål</button>
                 <div className="quest">
-                    <h3> Chugg!</h3>
+                    <h3> Skål 1 slurk</h3>
                 </div>
             <button onClick={next} className="NextButton">Neste spørsmål</button>
         </div>

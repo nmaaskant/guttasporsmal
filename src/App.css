@@ -17,6 +17,7 @@
     padding: 25px;
     grid-column: 1/2;
     font-size: 24px;
+    border-right: transparent;
 
 }
 .disabled{
@@ -59,6 +60,7 @@
   background-color: #4CAF50; /* Green */
   color: white;
   border: 2px solid aqua;
+  border-left: transparent;
 }
 .info:hover{
   background-color: aqua;

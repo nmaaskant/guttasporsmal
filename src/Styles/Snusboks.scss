@@ -45,12 +45,12 @@
 
   .Buttons {
     height: 100vh;
-    width: 1680px;
+    width: 100%;
     display: flex;
     flex-direction: row;
 
         .NextButton {
-            width: 50%;
+            width: 70%;
             background-color: $PurpleColor;
             border-color: transparent;
             &:active {
@@ -59,7 +59,7 @@
         }
 
         .PrevButton {
-            width: 50%;
+            width: 30%;
             background-color: $PurpleColor;
             border-color: transparent;
             &:active {

@@ -85,6 +85,7 @@ function Snusboks(props){
 
     //Når tilbake knappen trykkes: Ny bakgrunnsfarge, spørsmålscounter tilbake 1.
     const previous = () => {
+        if(isSkål) setSkål(false);
         if (isChallenge) setChallenge(false);
         else{
         if(count>0) {setCount(count - 1);
@@ -94,13 +95,13 @@ function Snusboks(props){
 
     return(
         <div className="Snusboks">
+            <div className="Buttons">
+                <button onClick={previous} className="PrevButton"></button>
+                <button onClick={next} className="NextButton"></button>
+            </div>
             <div className="Text">
                     <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
                     <h3 className="Challenge"> {isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count])}</h3>
-                </div>
-            <div className="Buttons">
-                <button onClick={previous} className="PrevButton">forrige spørsmål</button>
-                <button onClick={next} className="NextButton">Neste spørsmål</button>
             </div>
         </div>
     )

@@ -72,7 +72,7 @@
 }
 
 .Snusboks .Buttons .NextButton {
-  width: 50%;
+  width: 70%;
   background-color: purple;
   border-color: transparent;
 }
@@ -82,7 +82,7 @@
 }
 
 .Snusboks .Buttons .PrevButton {
-  width: 50%;
+  width: 30%;
   background-color: purple;
   border-color: transparent;
 }

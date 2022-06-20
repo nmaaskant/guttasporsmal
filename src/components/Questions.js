@@ -1,4 +1,4 @@
-const questions = {
+const Questions = {
     Q1: 'har mest milf mor?',
     Q2: 'har den fineste søsteren?',
     Q3: 'skal chugge resten av glasset', 
@@ -14,8 +14,8 @@ const questions = {
     Q13: 'får klamydia først',
     Q14: 'tar med seg smårips hjem fra byen?',
     Q15: 'månetlig abonnement på tinder gold?',
-    Q16: '',
-    Q17: '',
+    Q16: 'er alltid blakk',
+    Q17: 'er tøff bak tastaturet',
     Q18: '',
     Q19: '',
     Q20: '',
@@ -31,4 +31,4 @@ const questions = {
     Q30: '',
 };
 
-export default questions;
+export default Questions;

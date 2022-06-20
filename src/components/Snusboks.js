@@ -38,26 +38,21 @@ function sortQuestions(){
     challenges.sort(() => Math.random() - 0.5);
 }
 
-
-function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-
-    document.body.style.background = bgColor;
+function sortQuestionsNew(Questions) {
+    Questions.sort (() => Math.random() - 0.5);
+    challenges.sort(() => Math.random() - 0.5);
 }
-sortQuestions();
-random_bg_color();
+
+sortQuestionsNew();
 
 function Snusboks(props){
+
     const [count, setCount] = useState(0);
     const [isChallenge, setChallenge] = useState(false);
     const [challengeCount, setChallengeCount] = useState(-1);
 
     //Når next knappen trykkes: Ny bakgrunnsfarge, 10% sjangs for utfordring, neste spørsmål ellers
     const next = () => {
-        random_bg_color();
         let numb = Math.random();
         if (numb < 0.1){
             setChallenge(true);
@@ -74,16 +69,15 @@ function Snusboks(props){
         if (isChallenge) setChallenge(false);
         else{
         if(count>0) {setCount(count - 1);
-        random_bg_color();
         }}
     }
 
     return(
         <div className="Snusboks">
             <div className="Text">
-                    <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                    <p className="Spørsmål"> {isChallenge ? "Utfordring!" : "Spørsmål "+ (count+1) + " av 100"}</p>
                     <p className="HvemAvGutta"> Hvem av gutta...</p>
-                    <h3 className="Challenge"> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                    <h3 className="Challenge"> {isChallenge ? challenges[challengeCount] : Questions[count]}</h3>
                 </div>
             <div className="Buttons">
                 <button onClick={previous} className="PrevButton">forrige spørsmål</button>

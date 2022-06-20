@@ -1,25 +1,13 @@
 @charset "UTF-8";
 .Snusboks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .Snusboks .Text {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .Snusboks .Text .Spørsmål {
   height: auto;
   width: 400px;
@@ -27,25 +15,21 @@
   position: absolute;
   top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 40px;
 }
-
 .Snusboks .Text .HvemAvGutta {
   height: auto;
-  width: 220px;
+  width: 400px;
   text-align: center;
   position: absolute;
   top: 35%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 30px;
 }
-
 .Snusboks .Text .Challenge {
   height: auto;
   width: 600px;
@@ -53,41 +37,29 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 40px;
 }
-
 .Snusboks .Buttons {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .Snusboks .Buttons .NextButton {
   width: 70%;
   background-color: purple;
   border-color: transparent;
 }
-
 .Snusboks .Buttons .NextButton:active {
-  background-color: #6b016b;
+  background-color: rgb(107, 1, 107);
 }
-
 .Snusboks .Buttons .PrevButton {
   width: 30%;
   background-color: purple;
   border-color: transparent;
 }
-
 .Snusboks .Buttons .PrevButton:active {
-  background-color: #6b016b;
-}
-/*# sourceMappingURL=Snusboks.css.map */
+  background-color: rgb(107, 1, 107);
+}/*# sourceMappingURL=Snusboks.css.map */

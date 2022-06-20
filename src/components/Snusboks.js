@@ -51,13 +51,27 @@ sortQuestions();
 random_bg_color();
 
 function Snusboks(props){
+
     const [count, setCount] = useState(0);
     const [isChallenge, setChallenge] = useState(false);
     const [challengeCount, setChallengeCount] = useState(-1);
+    const [isSkål, setSkål] = useState(false);
+
+    let skåler = <div>
+        <h3>{count+1} spørsmål!</h3>
+        <p>alle drikker {(count+1)/10} slurker</p>
+        </div>;
+
+
 
     //Når next knappen trykkes: Ny bakgrunnsfarge, 10% sjangs for utfordring, neste spørsmål ellers
     const next = () => {
         random_bg_color();
+        if((count+1)%10===0 && !isSkål){
+            setSkål(true);
+            return;
+        }
+        setSkål(false);
         let numb = Math.random();
         if (numb < 0.1){
             setChallenge(true);
@@ -82,8 +96,7 @@ function Snusboks(props){
         <div className="Snusboks">
             <div className="Text">
                     <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-                    <p className="HvemAvGutta"> Hvem av gutta...</p>
-                    <h3 className="Challenge"> {isChallenge ? challenges[challengeCount] : questions[count]}</h3>
+                    <h3 className="Challenge"> {isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count])}</h3>
                 </div>
             <div className="Buttons">
                 <button onClick={previous} className="PrevButton">forrige spørsmål</button>

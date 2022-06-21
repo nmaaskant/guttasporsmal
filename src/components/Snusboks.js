@@ -1,7 +1,7 @@
 import '../Styles/Snusboks.css';
 import React, { useState } from "react";
 import Questions from './Questions';
-import Challenges from './Challenges'
+import Challenges from './Challenges';
 
 /*
 let colors = [
@@ -18,6 +18,7 @@ let colors = [
 
 let questions = Questions();
 let challenges = Challenges();
+let endscreen = require("./dancing-rave.gif")
 
 function random_bg_color() {
     var x = Math.floor(Math.random() * 256);
@@ -49,15 +50,15 @@ function Snusboks(props){
             setSkål(true);
             return;
         }
-        setSkål(false);
         let numb = Math.random();
-        if (numb < 0.1){
+        if (numb < 0.1 && !isSkål){
             setChallenge(true);
             setChallengeCount(challengeCount + 1)
         }
         else{
             setCount(count + 1);
             setChallenge(false);
+            setSkål(false);
         }
     }
 
@@ -74,16 +75,28 @@ function Snusboks(props){
         }}
     }
 
+    const restart = () => {
+        questions = Questions();
+        challenges = Challenges();
+        setCount(0);
+        setChallengeCount(0);
+        setSkål(false);
+        setChallenge(false);
+    }
+
+
+
     return(
+
         <div className="Snusboks">
             <div className="Buttons">
                 <button onClick={previous} className="PrevButton"></button>
-                <button onClick={next} className="NextButton"></button>
+                <button onClick={count<=99 ? next : restart} className="NextButton"></button>
             </div>
             <div className="Text">
-                    <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
-                    <p className="HvemAvGutta"> {isSkål ? spørsmålSkål : (isChallenge ? "Den med boksen må..." : "Hvem av gutta...")}</p>
-                    <h3 className="Challenge"> {isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count])}</h3>
+                    <p className="Spørsmål"> {count > 99 ? "Trykk for å starte på nytt" : (isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100")}</p>
+                    <p className="HvemAvGutta"> {count > 99 ? "" : (isSkål ? spørsmålSkål : (isChallenge ? "Den med boksen må..." : "Hvem av gutta..."))}</p>
+                    <h3 className="Challenge"> {count > 99 ? <img src={endscreen}/> : (isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count]))}</h3>
             </div>
         </div>
     )

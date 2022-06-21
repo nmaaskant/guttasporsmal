@@ -2,6 +2,7 @@ import '../Styles/Snusboks.css';
 import React, { useState } from "react";
 import Questions from './Questions';
 import Challenges from './Challenges';
+import Memes from './Memes';
 
 /*
 let colors = [
@@ -18,7 +19,7 @@ let colors = [
 
 let questions = Questions();
 let challenges = Challenges();
-let endscreen = require("./dancing-rave.gif")
+let gifs = Memes();
 
 function random_bg_color() {
     var x = Math.floor(Math.random() * 256);
@@ -96,7 +97,8 @@ function Snusboks(props){
             <div className="Text">
                     <p className="Spørsmål"> {count > 99 ? "Trykk for å starte på nytt" : (isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100")}</p>
                     <p className="HvemAvGutta"> {count > 99 ? "" : (isSkål ? spørsmålSkål : (isChallenge ? "Den med boksen må..." : "Hvem av gutta..."))}</p>
-                    <h3 className="Challenge"> {count > 99 ? <img src={endscreen}/> : (isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count]))}</h3>
+                    <h3 className="Challenge"> {count > 99 ? <img src={gifs[-1]} alt="Trykk for å starte på nytt"/> : (isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count]))}</h3>
+                    <p className='Meme'> {isSkål ? <img src={gifs[((count+1)/10)-1]} alt="Skål!"/> : "" }</p>
             </div>
         </div>
     )

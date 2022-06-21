@@ -4,7 +4,9 @@ let challenges = [
     "Dele ut 5 slurker",
     "Utfordre noen til armbakk",
     "Storytime!",
-    "Ta av et klesplagg"
+    "Ta av et klesplagg",
+    "lese opp siste melding fra tinder",
+    
 ]
 
 function Challenges(props){

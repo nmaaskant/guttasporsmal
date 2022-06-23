@@ -1,12 +1,29 @@
 @charset "UTF-8";
-.Snusboks {
-  display: flex;
-  flex-direction: column;
+.Snusboks .Buttons {
+  height: 100vh;
+  width: 100%;
 }
-.Snusboks .Text {
-  height: auto;
-  display: flex;
-  flex-direction: row;
+.Snusboks .Buttons .NextButton {
+  height: 100vh;
+  width: 70%;
+  left: 30%;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+}
+.Snusboks .Buttons .NextButton:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.Snusboks .Buttons .PrevButton {
+  height: 100vh;
+  width: 30%;
+  right: 70%;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+}
+.Snusboks .Buttons .PrevButton:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .Snusboks .Text .Spørsmål {
   height: auto;
@@ -18,6 +35,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 4vmin;
+  z-index: -1;
 }
 .Snusboks .Text .HvemAvGutta {
   height: auto;
@@ -29,6 +47,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 4vmin;
+  z-index: -1;
 }
 .Snusboks .Text .Challenge {
   height: auto;
@@ -40,6 +59,7 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 6vmin;
+  z-index: -1;
 }
 .Snusboks .Text .Meme {
   height: auto;
@@ -49,26 +69,5 @@
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.Snusboks .Buttons {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-.Snusboks .Buttons .NextButton {
-  width: 70%;
-  background-color: purple;
-  border-color: transparent;
-}
-.Snusboks .Buttons .NextButton:active {
-  background-color: rgb(107, 1, 107);
-}
-.Snusboks .Buttons .PrevButton {
-  width: 30%;
-  background-color: purple;
-  border-color: transparent;
-}
-.Snusboks .Buttons .PrevButton:active {
-  background-color: rgb(107, 1, 107);
+  z-index: -1;
 }/*# sourceMappingURL=Snusboks.css.map */

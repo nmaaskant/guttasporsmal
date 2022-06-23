@@ -77,6 +77,7 @@ function Snusboks(props){
     }
 
     const restart = () => {
+        random_bg_color();
         questions = Questions();
         challenges = Challenges();
         setCount(0);

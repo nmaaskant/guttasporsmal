@@ -69,7 +69,21 @@ let questions = [
     "er størst gamer",
     "havner i fengsel",
     "rømmer til mexico",
-    "er mest nerd"
+    "er mest nerd",
+    "får barn først",
+    "bor lengst hos foreldrene sine",
+    "spyr ikveld",
+    "melder seg på ex on the beach",
+    "er alltid med på fylla",
+    "går på byen alenes",
+    "er mest på maccen",
+    "er mest religiøs",
+    "er mest på mobilen",
+    "er med i mile high club",
+    "krangler mest med vektere",
+    "hat tatt en tatovering i fylla",
+    
+
 ]
 
 function Questions(props){

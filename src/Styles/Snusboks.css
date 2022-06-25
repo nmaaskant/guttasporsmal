@@ -1,9 +1,18 @@
 @charset "UTF-8";
+.Snusboks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .Snusboks {
+    transform: rotate(90deg);
+  }
+}
 .Snusboks .Buttons {
   height: 100vh;
   width: 100%;
 }
-
 .Snusboks .Buttons .NextButton {
   height: 100vh;
   width: 70%;
@@ -14,6 +23,11 @@
 }
 .Snusboks .Buttons .NextButton:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 1000px) {
+  .Snusboks .Buttons .NextButton {
+    width: 80vh;
+  }
 }
 .Snusboks .Buttons .PrevButton {
   height: 100vh;
@@ -26,6 +40,11 @@
 .Snusboks .Buttons .PrevButton:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 1000px) {
+  .Snusboks .Buttons .PrevButton {
+    width: 80vh;
+  }
+}
 .Snusboks .Text .Spørsmål {
   height: auto;
   width: 600px;
@@ -37,7 +56,6 @@
   color: white;
   font-size: 4vmin;
   z-index: -1;
-
 }
 .Snusboks .Text .HvemAvGutta {
   height: auto;
@@ -73,4 +91,3 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }/*# sourceMappingURL=Snusboks.css.map */
-

@@ -4,18 +4,18 @@ import Questions from './Questions';
 import Challenges from './Challenges';
 import Memes from './Memes';
 
-/*
+
 let colors = [
-    color:cornflowerblue;
-    color:deeppink;
-    color:goldenrod;
-    color:lightcoral;
-    color:lightseagreen;
-    color:mediumpurple;
-    color:rosybrown;
-    color:violet;
+    "color:cornflowerblue",
+    "color:deeppink",
+    "color:goldenrod",
+    "color:lightcoral",
+    "color:lightseagreen",
+    "color:mediumpurple",
+    "color:rosybrown",
+    "color:violet"
 ]
-*/
+
 
 let questions = Questions();
 let challenges = Challenges();

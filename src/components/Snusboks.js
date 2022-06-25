@@ -101,6 +101,7 @@ function Snusboks(props){
             </div>
             <div className="Text">
                     <p className="Spørsmål"> {isChallenge ? "Utfordring!" :"Spørsmål "+ (count+1) + " av 100"}</p>
+                    <p className="HvemAvGutta">Hvem av gutta...</p>
                     <h3 className="Challenge"> {isSkål ? skåler : (isChallenge ? challenges[challengeCount] : questions[count])}</h3>
             </div>
         </div>

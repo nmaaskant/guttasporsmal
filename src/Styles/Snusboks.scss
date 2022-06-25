@@ -1,71 +1,82 @@
 @import './Variables.scss';
 
 .Snusboks{ 
-    display: flex;
-    flex-direction: column;
+      .Buttons {
+    height: 100vh;
+    width: 100%;
+        .NextButton {
+            height: 100vh;
+            width: 70%;
+            left: 30%;
+            background-color: transparent;
+            border-color: transparent;
+            position: absolute;
+            &:active {
+                background-color: rgba(255,255,255,0.2);
+            }
+        }
+
+        .PrevButton {
+            height: 100vh;
+            width: 30%;
+            right: 70%;
+            background-color: transparent;
+            border-color: transparent;
+            position: absolute;
+            &:active {
+                background-color: rgba(255,255,255,0.2);
+            }
+        }
+    }
+
 
     .Text {
-        height: auto;
-        display: flex;
-        flex-direction: row;
 
         .Spørsmål {
             height: auto;
-            width: 400px;
+            width: 600px;
             text-align: center;
             position: absolute;
             top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $WhiteColor;
-            font-size: 40px;
+            font-size: 4vmin;
+            z-index:-1;
         }
         .HvemAvGutta {
             height: auto;
-            width: 220px;
+            width: 400px;
             text-align: center;
             position: absolute;
             top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $WhiteColor;
-            font-size: 30px;
+            font-size: 4vmin;
+            z-index:-1;
         }
         .Challenge {
             height: auto;
-            width: 600px;
+            width: 100vmin;
             text-align: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $WhiteColor;
-            font-size: 40px;
+            font-size: 6vmin;
+            z-index:-1;
         }
-    }
-
-  .Buttons {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-        .NextButton {
-            width: 70%;
-            background-color: $PurpleColor;
-            border-color: transparent;
-            &:active {
-                background-color: $PurlerDarkColor;
-            }
-        }
-
-        .PrevButton {
-            width: 30%;
-            background-color: $PurpleColor;
-            border-color: transparent;
-            &:active {
-                background-color: $PurlerDarkColor;
-            }
+        .Meme {
+            height: auto;
+            width: 600px;
+            text-align: center;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index:-1;
         }
     }
 }

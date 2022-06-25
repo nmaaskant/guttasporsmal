@@ -1,27 +1,17 @@
 .Game {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0%;
   padding: 0%;
 }
-
 .Game .ButtonPrev {
   width: 15%;
   color: blue;
 }
-
 .Game .GameDisplay {
   width: 70%;
 }
-
 .Game .ButtonNext {
   width: 15%;
-}
-/*# sourceMappingURL=Game.css.map */
+}/*# sourceMappingURL=Game.css.map */

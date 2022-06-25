@@ -1,52 +1,76 @@
 @charset "UTF-8";
-.Snusboks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .Snusboks .Buttons {
   height: 100vh;
   width: 100%;
 }
 
 .Snusboks .Buttons .NextButton {
+  height: 100vh;
   width: 70%;
-  background-color: transparent;
-  border-color: yellow;
-}
-
-.Snusboks .Buttons .PrevButton {
-  width: 30%;
+  left: 30%;
   background-color: transparent;
   border-color: transparent;
+  position: absolute;
 }
-
-.Snusboks .Text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  color: white;
+.Snusboks .Buttons .NextButton:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
-
+.Snusboks .Buttons .PrevButton {
+  height: 100vh;
+  width: 30%;
+  right: 70%;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+}
+.Snusboks .Buttons .PrevButton:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .Snusboks .Text .Spørsmål {
-  font-size: 40px;
-}
+  height: auto;
+  width: 600px;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vmin;
+  z-index: -1;
 
+}
 .Snusboks .Text .HvemAvGutta {
-  font-size: 30px;
+  height: auto;
+  width: 400px;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4vmin;
+  z-index: -1;
 }
-
 .Snusboks .Text .Challenge {
-  font-size: 40px;
+  height: auto;
+  width: 100vmin;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vmin;
+  z-index: -1;
 }
-/*# sourceMappingURL=Snusboks.css.map */
+.Snusboks .Text .Meme {
+  height: auto;
+  width: 600px;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}/*# sourceMappingURL=Snusboks.css.map */
+

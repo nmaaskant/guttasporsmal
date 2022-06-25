@@ -16,7 +16,7 @@ useEffect(() => {
 
   return (
     <div className='App'>
-      { loading ? <SnusboksLoader /> : <Snusboks round="0" />}
+      { loading ? <SnusboksLoader /> : <Snusboks />}
     </div>
  );
 }

@@ -74,13 +74,12 @@ let questions = [
     "spyr ikveld",
     "melder seg på ex on the beach",
     "er alltid med på fylla",
-    "går på byen alenes",
+    "går på byen alene",
     "burde stoppe å spise på maccern",
     "er mest på mobilen",
     "er med i mile high club",
     "krangler mest med vektere",
-    "hat tatt en tatovering i fylla",
-    "er svigermors drøm",
+    "hat tatt en tatovering i fylla"
 
 ]
 

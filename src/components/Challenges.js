@@ -6,7 +6,10 @@ let challenges = [
     "Utfordre noen til armbakk",
     "Storytime!",
     "Ta av et klesplagg",
-    "lese opp siste melding fra tinder",
+    "lese opp siste melding de sendte på tinder",
+    "fortelle om sin værste sex-opplevelse",
+    "Velge en som skal vise sitt beste danse-move",
+    ""
     
 ]
 

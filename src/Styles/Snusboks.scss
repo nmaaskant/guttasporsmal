@@ -110,7 +110,7 @@
                 top: 25%;
             }
             animation-name: anim-popoutin;
-            animation-duration: 1s;
+            animation-duration: 0.8s;
             animation-iteration-count: 1;
         
         }
@@ -125,19 +125,19 @@
             transform: translate(-50%, -50%);
             z-index:-1;
             @media (max-width: 1000px){
-                top: 40%;
+                top: 45%;
             }
         }
           
           @keyframes anim-popoutin {
             0% {
-             width: 2vmin;
+             width: 0vmin;
               color: white;
               font-size: 0vmin;
               opacity: 0;
             }
             50% {
-                width: 130vmin;
+                width: 135vmin;
               color: white;
               font-size: 8vmin;
               opacity: 1;

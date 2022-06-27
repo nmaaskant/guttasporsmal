@@ -1,4 +1,5 @@
 import '../Styles/SnusboksLoader.css';
+import React from 'react';
 
 function SnusboksLoader () {
     return (

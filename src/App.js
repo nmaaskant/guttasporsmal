@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import Snusboks from './components/Snusboks';
 import SnusboksLoader from './components/SnusboksLoader';

@@ -8,9 +8,7 @@ let challenges = [
     "Ta av et klesplagg",
     "lese opp siste melding de sendte på tinder",
     "fortelle om sin værste sex-opplevelse",
-    "Velge en som skal vise sitt beste danse-move",
-    ""
-    
+    "Velge hvem som skal vise sitt beste danse-move",
 ]
 
 function Challenges(props){

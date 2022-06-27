@@ -54,7 +54,7 @@ function Snusboks(props){
             return;
         }
         let numb = Math.random();
-        if (numb < 0.1 && !isSkål){
+        if (numb < 0.06 && !isSkål){
             setChallenge(true);
             setChallengeCount(challengeCount + 1)
         }

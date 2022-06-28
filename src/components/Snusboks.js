@@ -39,8 +39,8 @@ function Snusboks(props){
     const [isSkål, setSkål] = useState(false);
     const [anim, setAnim] = useState(true);
 
-    let spørsmålSkål = <p>{count+1} spørsmål!</p>;
-    let skåler = <p>alle drikker {(count+1)/10} slurker</p>;
+    let spørsmålSkål = count+1 + " spørsmål!";
+    let skåler = "alle drikker " + (count+1)/10 + " slurker";
 
 
 

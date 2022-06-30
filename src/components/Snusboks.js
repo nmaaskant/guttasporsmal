@@ -6,14 +6,45 @@ import Memes from './Memes';
 
 
 let colors = [
-    "color:cornflowerblue",
-    "color:deeppink",
-    "color:goldenrod",
-    "color:lightcoral",
-    "color:lightseagreen",
-    "color:mediumpurple",
-    "color:rosybrown",
-    "color:violet"
+    "69, 39, 160", 
+    "0, 137, 123",
+    "191, 54, 12",
+    "233, 30, 99",
+    "0, 137, 123",
+    "124, 77, 255",
+    "255, 82, 82",
+    "69, 90, 100",
+    "255, 112, 67",
+    "251, 192, 45",
+    "197, 17, 98",
+    "77, 182, 172",
+    "66, 165, 245",
+    "255, 214, 0",
+    "0, 200, 83",
+    "0, 105, 92",
+    "26, 35, 126",
+    "106, 27, 154",
+    "191, 54, 12",
+    "78, 52, 46",
+    "239, 83, 80",
+    "2, 136, 209",
+    "41, 98, 255",
+    "0, 200, 83",
+    "255, 171, 0",
+    "213, 0, 0",
+    "102, 205, 170",
+    "255, 193, 193",
+    "244, 164, 96",
+    "255, 127, 36",
+    "162, 205, 90",
+    "124 252, 0",
+    "255, 165, 0",
+    "255, 36, 0",
+    "255, 62, 150",
+    "255, 0, 255",
+    "255, 185, 15",
+    "238, 220, 130",
+    "255, 215, 0"
 ]
 
 
@@ -22,11 +53,9 @@ let challenges = Challenges();
 let gifs = Memes();
 
 function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-
+    let num_colors = colors.length;
+    let random_number = (Math.floor((Math.random() * num_colors) + 1)-1);
+    let bgColor = "rgb(" + colors[random_number] + ")";
     document.body.style.background = bgColor;
 }
 random_bg_color();

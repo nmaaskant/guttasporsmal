@@ -26,7 +26,7 @@
 }
 @media (max-width: 1000px) {
   .Snusboks .Buttons .NextButton {
-    width: 80vh;
+    width: 70vw;
   }
 }
 .Snusboks .Buttons .PrevButton {
@@ -42,7 +42,7 @@
 }
 @media (max-width: 1000px) {
   .Snusboks .Buttons .PrevButton {
-    width: 80vh;
+    width: 80vw;
   }
 }
 .Snusboks .Text .Spørsmål {

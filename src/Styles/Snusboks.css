@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks {
     transform: rotate(90deg);
   }
@@ -24,7 +24,7 @@
 .Snusboks .Buttons .NextButton:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Buttons .NextButton {
     width: 70vw;
   }
@@ -40,7 +40,7 @@
 .Snusboks .Buttons .PrevButton:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Buttons .PrevButton {
     width: 80vw;
   }
@@ -57,7 +57,7 @@
   font-size: 4vmin;
   z-index: -1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Text .Spørsmål {
     top: 5%;
   }
@@ -74,7 +74,7 @@
   font-size: 4vmin;
   z-index: -1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Text .HvemAvGutta {
     top: 15%;
   }
@@ -91,7 +91,7 @@
   font-size: 6vmin;
   z-index: -1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Text .Challenge {
     top: 25%;
   }
@@ -114,7 +114,7 @@
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Text .ChallengeAnim {
     top: 25%;
   }
@@ -124,12 +124,12 @@
   width: 600px;
   text-align: center;
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .Snusboks .Text .Meme {
     top: 45%;
   }

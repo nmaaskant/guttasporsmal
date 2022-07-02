@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/guttasporsmal/static/media/dancing-rave.f0ebe574.gif"
   },
   {
-    "revision": "a5314ebd0c19b0330f3e7e1b873eb0c1",
+    "revision": "b30e2f016b6aa87d75f87f6dc72511aa",
     "url": "/guttasporsmal/index.html"
   }
 ];

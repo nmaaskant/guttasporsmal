@@ -1,7 +1,7 @@
 {
-  "main.css": "/guttasporsmal/static/css/main.f684399e.chunk.css",
-  "main.js": "/guttasporsmal/static/js/main.44b7680c.chunk.js",
-  "main.js.map": "/guttasporsmal/static/js/main.44b7680c.chunk.js.map",
+  "main.css": "/guttasporsmal/static/css/main.7fe17cca.chunk.css",
+  "main.js": "/guttasporsmal/static/js/main.18c6c690.chunk.js",
+  "main.js.map": "/guttasporsmal/static/js/main.18c6c690.chunk.js.map",
   "static/js/1.e09cd7cc.chunk.js": "/guttasporsmal/static/js/1.e09cd7cc.chunk.js",
   "static/js/1.e09cd7cc.chunk.js.map": "/guttasporsmal/static/js/1.e09cd7cc.chunk.js.map",
   "runtime~main.js": "/guttasporsmal/static/js/runtime~main.f6321334.js",
@@ -17,8 +17,8 @@
   "static/media/street-rave.gif": "/guttasporsmal/static/media/street-rave.96904bfd.gif",
   "static/media/fail.gif": "/guttasporsmal/static/media/fail.69957259.gif",
   "static/media/dancing-rave.gif": "/guttasporsmal/static/media/dancing-rave.f0ebe574.gif",
-  "static/css/main.f684399e.chunk.css.map": "/guttasporsmal/static/css/main.f684399e.chunk.css.map",
+  "static/css/main.7fe17cca.chunk.css.map": "/guttasporsmal/static/css/main.7fe17cca.chunk.css.map",
   "index.html": "/guttasporsmal/index.html",
-  "precache-manifest.a45504a3426946849d2024760b0522a6.js": "/guttasporsmal/precache-manifest.a45504a3426946849d2024760b0522a6.js",
+  "precache-manifest.9b8267f70c62dcb02d70338c104bb23c.js": "/guttasporsmal/precache-manifest.9b8267f70c62dcb02d70338c104bb23c.js",
   "service-worker.js": "/guttasporsmal/service-worker.js"
 }

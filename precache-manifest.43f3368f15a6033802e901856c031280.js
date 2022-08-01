@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d9869642c41620c224b9",
+    "revision": "fbafedd21c63766f4d47",
     "url": "/guttasporsmal/static/css/main.43c5267f.chunk.css"
   },
   {
-    "revision": "d9869642c41620c224b9",
-    "url": "/guttasporsmal/static/js/main.d9869642.chunk.js"
+    "revision": "fbafedd21c63766f4d47",
+    "url": "/guttasporsmal/static/js/main.fbafedd2.chunk.js"
   },
   {
     "revision": "e09cd7cc5b8cebfd4d75",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/guttasporsmal/static/media/dancing-rave.f0ebe574.gif"
   },
   {
-    "revision": "b30e2f016b6aa87d75f87f6dc72511aa",
+    "revision": "3f3bb75ba7829450b62c89fddb7aea1e",
     "url": "/guttasporsmal/index.html"
   }
 ];
